@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+#game-container {
+    position: relative;
+}
+
+#game-canvas {
+    border: 2px solid white;
+    background-color: white;
+}
+
+#ui {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#status {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#timer {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+#instructions {
+    font-size: 14px;
+}

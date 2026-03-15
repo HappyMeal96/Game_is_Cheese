@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zombie Tag Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        <div id="ui">
+            <div id="status">Status: Human</div>
+            <div id="timer">Time: 80</div>
+            <details id="rules-dropdown">
+                <summary>Rules (Click to Expand)</summary>
+                <div>
+                    - Use WASD to move.<br>
+                    - As Human: Avoid zombies, grow bigger/faster over time, enter Juke Arena (orange square) for double score & speed boost, but get locked in until round reset.<br>
+                    - As Zombie: Tag humans to infect them.<br>
+                    - Rounds: 80 seconds, then 3-second reset pause.<br>
+                    - Score: (Kills x 10) + Survive Time; higher score spawns more zombies.<br>
+                    - Kills persist across rounds.<br>
+                    - Robot Zombies (gray): Stationary obstacles.<br>
+                    - Juke Arena: 3 purple zombies chase with spreading; other zombies can't enter.
+                </div>
+            </details>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
